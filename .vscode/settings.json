@@ -1,0 +1,10 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Lab2GradeCalculator/lib/hamcrest-core-1.3.jar",
+        "Lab2GradeCalculator/lib/junit-4.13.2.jar"
+    ],
+    "java.configuration.runtimes": [
+        
+    ]
+}
