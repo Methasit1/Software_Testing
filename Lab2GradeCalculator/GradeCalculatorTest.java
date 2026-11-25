@@ -33,4 +33,11 @@ public class GradeCalculatorTest {
         assertEquals("F",  calc.gradeOf(49));
         assertEquals("F",  calc.gradeOf(0));
     }
+
+    @Test
+    public void testOutOfRange_TC17_TC18() {
+        GradeCalculator calc = new GradeCalculator();
+        assertThrows(IllegalArgumentException.class, () -> calc.gradeOf(-1));
+        assertThrows(IllegalArgumentException.class, () -> calc.gradeOf(101));
+    }
 }
