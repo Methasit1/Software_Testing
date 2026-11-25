@@ -2,6 +2,9 @@ package Lab2GradeCalculator;
 
 public class GradeCalculator {
     public String gradeOf(int score){
+        if (score < 0 || score > 100) {
+            throw new IllegalArgumentException("คะแนนต้องอยู่ระหว่าง 0-100");
+        }
         if (score >= 80) return "A";
         if (score >= 75) return "B+";
         if (score >= 70) return "B";
